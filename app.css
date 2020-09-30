@@ -1,0 +1,18 @@
+body nav {
+  margin-bottom: 2%;
+}
+
+div nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.container {
+  margin-bottom: 3%;
+}
+
+.col-3 .container:nth-child(2) {
+  margin-top: 10%;
+}

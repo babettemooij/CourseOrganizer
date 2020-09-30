@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <title>CourseOrganizer</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">CourseOrganizer</a>
+    </nav>
+
+    <div class="container">
+      <div class="container">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search on title, topics or authors"
+            aria-label="Search on title, topics or authors"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <h3>Course</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Big Data
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Statistics, Simulation & Organization
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Data mining
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Fundamentals of Data Science
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Applied machine learning
+              </label>
+            </div>
+          </div>
+
+          <div class="container">
+            <h3>Length</h3>
+            <input
+              type="range"
+              class="custom-range"
+              min="0"
+              max="5"
+              id="customRange2"
+            />
+          </div>
+
+          <div class="container">
+            <h3>Year Created</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                2016-2020
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                2011-2015
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                2001-2010
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                1981-2000
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                1980 and before
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small>Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small>Author 1, Author 2, Author 3, Author 4</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Slides</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+          </div>
+
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
