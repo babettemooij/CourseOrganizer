@@ -1,502 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon.ico/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon.ico/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon.ico/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon.ico/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon.ico/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon.ico/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon.ico/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon.ico/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon.ico/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon.ico/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon.ico/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon.ico/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon.ico/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./favicon.ico/favicon-32x32.png"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="96x96"
+  href="./favicon.ico/favicon-96x96.png"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="./favicon.ico/favicon-16x16.png"
+  />
+  <link rel="favicon.ico/manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="app.css" />
+  <!-- Bootstrap CSS -->
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  crossorigin="anonymous"
+  />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="app.css" />
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <!-- Mustache -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-    <!-- D3 links -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <!-- JS search script(s) -->
-    <script src="/static/search.js"></script>
-    <title>CourseOrganizer</title>
-  </head>
+  <!-- Mustache -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <!-- D3 links -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- JS search script(s) -->
+  <script src="/static/main.js"></script>
+  <script src="/static/search.js"></script>
+  <title>CourseOrganizer</title>
+</head>
 
-  <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">CourseOrganizer</a>
-    </nav>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">CourseOrganizer</a>
+  </nav>
 
-    <!-- Topic Blocks-->
-    <div class="container">
-      <div class="row topicblock">
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action red">
-              <h5 class="mb-1">Entrepreneurship</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action blue">
-              <h5 class="mb-1">Statistics</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action green">
-              <h5 class="mb-1">Machine Learning</h5>
-            </div>
+  <!-- Topic Blocks-->
+  <div class="container">
+    <div class="row topicblock">
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action red">
+            <h5 class="mb-1">Entrepreneurship</h5>
           </div>
         </div>
       </div>
-      <div class="row topicblock">
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action purple">
-              <h5 class="mb-1">Information Organization</h5>
-            </div>
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action blue">
+            <h5 class="mb-1">Statistics</h5>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action orange">
-              <h5 class="mb-1">Intelligent Systems</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action yellow">
-              <h5 class="mb-1">Natural Language Processing</h5>
-            </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action green">
+            <h5 class="mb-1">Machine Learning</h5>
           </div>
         </div>
       </div>
     </div>
+    <div class="row topicblock">
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action purple">
+            <h5 class="mb-1">Information Organization</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action orange">
+            <h5 class="mb-1">Intelligent Systems</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action yellow">
+            <h5 class="mb-1">Natural Language Processing</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- SEARCH BAR -->
-    <div class="container">
-      <div class="input-group mb-3">
-        <input
-          id="search_input"
-          type="text"
-          class="form-control"
-          placeholder="Search on title, topics or authors"
-          aria-label="Search on title, topics or authors"
-          aria-describedby="button-addon2"
-        />
-        <div class="input-group-append">
-          <button
-            onclick="search()"
-            class="btn btn-outline-secondary"
-            type="button"
-            id="button-addon2"
-          >
-            Search
-          </button>
+  <!-- SEARCH BAR -->
+  <div class="container">
+    <div class="input-group mb-3">
+      <input
+      id="search_input"
+      type="text"
+      class="form-control"
+      placeholder="Search on title, topics or authors"
+      aria-label="Search on title, topics or authors"
+      aria-describedby="button-addon2"
+      />
+      <div class="input-group-append">
+        <button
+        onclick="search()"
+        class="btn btn-outline-secondary"
+        type="button"
+        id="button-addon2"
+        >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- SIDE BAR -->
+    <div class="col-sm-4">
+      <div class="container">
+        <h3>Course</h3>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Big Data
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Statistics, Simulation & Organization
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Data Mining
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Fundamentals of Data Science
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Applied Machine Learning
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Data-driven Business Innovation and Entrepreneurship
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Data Systems Project
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Data, Sensors, and Complex Services
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Entrepreneurship for AI and CS
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Information Organization
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Intelligent Interactive Systems
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Modeling System Dynamics
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Type of Document</h3>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Paper
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            Slides
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Page count</h3>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            0 - 10 pages
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            10 - 30 pages
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            30 - 50 pages
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            50+ pages
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Year Created</h3>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            2016 - 2020
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            2011 - 2015
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            2001 - 2010
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            1981 - 2000
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1">
+            1980 and before
+          </label>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <!-- SIDE BAR -->
-        <div class="col-sm-4">
-          <div class="container">
-            <h3>Course</h3>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Big Data
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Statistics, Simulation & Organization
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Data Mining
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Fundamentals of Data Science
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Applied Machine Learning
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Data-driven Business Innovation and Entrepreneurship
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Data Systems Project
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Data, Sensors, and Complex Services
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Entrepreneurship for AI and CS
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Information Organization
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Intelligent Interactive Systems
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Modeling System Dynamics
-              </label>
-            </div>
-          </div>
+    <!-- SEARCH RESULTS -->
+    <div class="col-sm-8 results">
 
-          <div class="container">
-            <h3>Type of Document</h3>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Paper
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                Slides
-              </label>
-            </div>
-          </div>
-
-          <div class="container">
-            <h3>Page count</h3>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                0 - 10 pages
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                10 - 30 pages
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                30 - 50 pages
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                50+ pages
-              </label>
-            </div>
-          </div>
-
-          <div class="container">
-            <h3>Year Created</h3>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                2016 - 2020
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                2011 - 2015
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                2001 - 2010
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                1981 - 2000
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                1980 and before
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- SEARCH RESULTS -->
-        <div class="col-sm-8 results">
-
-          <div class="list-group">
-            <div id="target"></div>
-            <script id="mp_template" type="text/template">
-              <a href="document_view.html?title={{title}}" target="_blank">
-              <div class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1"> {{ title }}</h5>
-                  <small> {{ type }}</small>
-                </div>
-                <p class="mb-1">
-                  {{}}
-                </p>
-                <small>{{ authors }}</small>
+      <div class="list-group">
+        <div id="target"></div>
+        <script id="mp_template" type="text/template">
+          <a href="document_view.html?title={{title}}" target="_blank">
+            <div class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"> {{ processed_title }}</h5>
+                <small> {{ type }}</small>
               </div>
-            </a>
-            </script>
-        </div>
+              <p class="mb-1">
+                {{ show_abstract }}
+              </p>
+              <small>{{ authors }}</small>
+            </div>
+          </a>
+        </script>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <script src="main.js"></script>
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"
+  ></script>
+</body>
 </html>

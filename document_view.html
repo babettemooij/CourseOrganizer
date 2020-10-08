@@ -25,6 +25,7 @@
     <!-- D3 links -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
      <!-- JS search script(s) -->
+     <script src="/static/main.js"></script>
      <script src="/static/document_view.js"></script>
     <title>CourseOrganizer</title>
   </head>
@@ -36,7 +37,7 @@
   <script id="seperate_view_template" type="text/template">
   <div class="row justify-content-md-center">
     <div class="col-6  justify-content-center">
-      <h1>{{ title }}</h1>
+      <h1>{{ processed_title }}</h1>
       <h3>by {{authors}}</h3>
       <p><b>Page count:</b> {{page_count}}    ·    <b>Year:</b> {{ year_created}}</p>
       <table class="table">
@@ -63,12 +64,12 @@
           </tr>
           <tr>
             <th scope="row">Keywords</th>
-            <td>{{ keywords }}</td>
+            <td>{{ show_keywords }}</td>
           </tr>
         </tbody>
       </table>
 
-      <iframe src="pdfs/uva-aml2019-lecture1.pdf" width="100%" height="500px">
+      <iframe src="pdfs/{{filename}}" width="100%" height="500px">
     </div>
   </div>
 </script>
