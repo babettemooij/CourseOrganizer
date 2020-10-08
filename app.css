@@ -17,9 +17,31 @@ div nav {
   margin-top: 10%;
 }
 
-.box {
-  background-color: lightblue;
-  height:200px;
-  width:10px;
-  border: 1px solid;
+
+.topicblock {
+  margin-bottom: 2%;
+}
+
+.purple {
+  background-color: rgba(204, 153, 201, 0.7);
+}
+
+.blue {
+  background-color: rgba(158, 193, 207, 0.7);
+}
+
+.green {
+  background-color: rgba(158, 224, 158, 0.7);
+}
+
+.yellow {
+  background-color: rgba(253, 253, 151, 0.7);
+}
+
+.orange {
+  background-color: rgba(254, 177, 68, 0.7);
+}
+
+.red {
+  background-color: rgba(255, 102, 99, 0.7);
 }
