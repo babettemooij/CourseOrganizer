@@ -17,6 +17,13 @@
     />
     <link rel="stylesheet" href="app.css" />
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <!-- D3 links -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+     <!-- JS search script(s) -->
+     <script src="/static/search.js"></script>
     <title>CourseOrganizer</title>
   </head>
 
@@ -57,22 +64,26 @@
 
     <!-- SEARCH BAR -->
     <div class="container">
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Search on title, topics or authors"
-          aria-label="Search on title, topics or authors"
-          aria-describedby="button-addon2"
-        />
-        <div class="input-group-append">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="button-addon2"
-          >
-            Search
-          </button>
+      <div class="container">
+        <div class="input-group mb-3">
+          <input
+            id="search_input"
+            type="text"
+            class="form-control"
+            placeholder="Search on title, topics or authors"
+            aria-label="Search on title, topics or authors"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              onclick="search()"
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </div>
