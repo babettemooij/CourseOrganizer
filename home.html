@@ -20,7 +20,7 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <!-- Mustache -->
+    <!-- mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <!-- D3 links -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -34,7 +34,6 @@
       <a class="navbar-brand" href="#">CourseOrganizer</a>
     </nav>
 
-    <!-- SEARCH BAR -->
     <div class="container">
       <div class="container">
         <div class="input-group mb-3">
@@ -58,12 +57,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
       <div class="row">
-        <!-- SIDE BAR -->
-        <div class="col-sm-3">
+        <div class="col-3">
           <div class="container">
             <h3>Course</h3>
             <div class="form-check">
@@ -122,6 +118,7 @@
               </label>
             </div>
           </div>
+
           <div class="container">
             <h3>Length</h3>
             <input
@@ -193,31 +190,107 @@
           </div>
         </div>
 
-        <!-- SEARCH RESULTS -->
-        <div class="col-sm-9 results">
+        <div class="col-9">
           <div class="list-group">
-            <div id="target"></div>
             <script id="mp_template" type="text/template">
-              <a href="document_view.html?title={{title}}" target="_blank">
-              <div class="list-group-item list-group-item-action">
+              <a href="#" class="list-group-item list-group-item-action active">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1"> {{ title }}</h5>
-                  <small> {{ type }}</small>
+                  <h5 class="mb-1">{{ title }}</h5>
+                  <small>{{type}}</small>
                 </div>
                 <p class="mb-1">
-                  {{}}
+                  {{ abstract }}
                 </p>
                 <small>{{ authors }}</small>
-              </div>
-            </a>
+              </a>
             </script>
+
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Slides</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Title of the document</h5>
+                <small class="text-muted">Paper</small>
+              </div>
+              <p class="mb-1">
+                A description of the document. Donec id elit non mi porta
+                gravida at eget metus. Maecenas sed diam eget risus varius
+                blandit. Donec id elit non mi porta gravida at eget metus.
+                Maecenas sed diam eget risus varius blandit.
+              </p>
+              <small class="text-muted"
+                >Author 1, Author 2, Author 3, Author 4</small
+              >
+            </a>
+          </div>
+
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Optional JavaScript -->
-    <script src="main.js"></script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

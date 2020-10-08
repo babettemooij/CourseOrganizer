@@ -16,3 +16,10 @@ div nav {
 .col-3 .container:nth-child(2) {
   margin-top: 10%;
 }
+
+.box {
+  background-color: lightblue;
+  height:200px;
+  width:10px;
+  border: 1px solid;
+}

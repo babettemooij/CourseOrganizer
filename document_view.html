@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <!-- Mustache -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <!-- D3 links -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+     <!-- JS search script(s) -->
+     <script src="/static/document_view.js"></script>
+    <title>CourseOrganizer</title>
+  </head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">CourseOrganizer</a>
+  </nav>
+  <div id="fill_seperate_view_template"</div>
+  <script id="seperate_view_template" type="text/template">
+  <div class="row justify-content-md-center">
+    <div class="col-6  justify-content-center">
+      <h1>{{ title }}</h1>
+      <h3>by {{authors}}</h3>
+      <p><b>Page count:</b> {{page_count}}    ·    <b>Year:</b> {{ year_created}}</p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Course</th>
+            <td>{{ courses }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Type</th>
+            <td>{{ type }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Topic1</th>
+            <td>{{ topic1 }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Topic2</th>
+            <td>{{ topic2 }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Topic3</th>
+            <td>{{ topic3 }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Keywords</th>
+            <td>{{ keywords }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <iframe src="pdfs/uva-aml2019-lecture1.pdf" width="100%" height="500px">
+    </div>
+  </div>
+</script>
+</body>
