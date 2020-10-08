@@ -16,3 +16,7 @@ div nav {
 .col-3 .container:nth-child(2) {
   margin-top: 10%;
 }
+
+.topicblock {
+  margin-bottom: 2%;
+}
