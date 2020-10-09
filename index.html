@@ -73,47 +73,61 @@
   <!-- Topic Blocks-->
   <div class="container">
     <div class="row topicblock">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action red">
+          <div class="list-group-item list-group-item-action red" onclick="filtercategory('entrepreneurship')">
             <h5 class="mb-1">Entrepreneurship</h5>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action blue">
+          <div class="list-group-item list-group-item-action blue" onclick="filtercategory('statistics')">
             <h5 class="mb-1">Statistics</h5>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action green">
-            <h5 class="mb-1">Machine Learning</h5>
+          <div class="list-group-item list-group-item-action green" onclick="filtercategory('classification')">
+            <h5 class="mb-1">Classification</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action pink" onclick="filtercategory('data research')">
+            <h5 class="mb-1">Data Research</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="row topicblock">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action purple">
-            <h5 class="mb-1">Information Organization</h5>
+          <div class="list-group-item list-group-item-action purple" onclick="filtercategory('optimization')">
+            <h5 class="mb-1">Optimization</h5>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action orange">
+          <div class="list-group-item list-group-item-action orange" onclick="filtercategory('intelligent systems')">
             <h5 class="mb-1">Intelligent Systems</h5>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action yellow">
-            <h5 class="mb-1">Natural Language Processing</h5>
+          <div class="list-group-item list-group-item-action yellow" onclick="filtercategory('natural language processing')">
+            <h5 class="mb-1">NLP</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action darkblue" onclick="filtercategory('system modelling')">
+            <h5 class="mb-1">System Modelling</h5>
           </div>
         </div>
       </div>
@@ -154,8 +168,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="bd"
+          id="bd"
+          onclick="filtercourse('bd')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Big Data
@@ -165,8 +180,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="sso"
+          id="sso"
+          onclick="filtercourse('sso')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Statistics, Simulation & Organization
@@ -176,8 +192,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="dm"
+          id="dm"
+          onclick="filtercourse('dm')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data Mining
@@ -187,8 +204,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="fds"
+          id="fds"
+          onclick="filtercourse('fds')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Fundamentals of Data Science
@@ -198,8 +216,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="aml"
+          id="aml"
+          onclick="filtercourse('aml')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Applied Machine Learning
@@ -209,8 +228,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="ddbi"
+          id="ddbi"
+          onclick="filtercourse('ddbi')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data-driven Business Innovation and Entrepreneurship
@@ -220,8 +240,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="dsp"
+          id="dsp"
+          onclick="filtercourse('dsp')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data Systems Project
@@ -231,8 +252,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="dscs"
+          id="dscs"
+          onclick="filtercourse('dscs')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data, Sensors, and Complex Services
@@ -242,8 +264,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="eaics"
+          id="eaics"
+          onclick="filtercourse('eaics')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Entrepreneurship for AI and CS
@@ -253,8 +276,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="io"
+          id="io"
+          onclick="filtercourse('io')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Information Organization
@@ -264,8 +288,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="iis"
+          id="iis"
+          onclick="filtercourse('iis')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Intelligent Interactive Systems
@@ -275,8 +300,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
-          id="defaultCheck1"
+          value="msd"
+          id="msd"
+          onclick="filtercourse('msd')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Modeling System Dynamics
@@ -290,8 +316,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
+          value="paper"
           id="defaultCheck1"
+          onclick="filterdoc('paper')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Paper
@@ -301,8 +328,9 @@
           <input
           class="form-check-input"
           type="checkbox"
-          value=""
+          value="slides"
           id="defaultCheck1"
+          onclick="filterdoc('slides')"
           />
           <label class="form-check-label" for="defaultCheck1">
             Slides
@@ -318,6 +346,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filterlength([0, 10])"
           />
           <label class="form-check-label" for="defaultCheck1">
             0 - 10 pages
@@ -329,6 +358,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filterlength([10, 30])"
           />
           <label class="form-check-label" for="defaultCheck1">
             10 - 30 pages
@@ -340,6 +370,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filterlength([30, 50])"
           />
           <label class="form-check-label" for="defaultCheck1">
             30 - 50 pages
@@ -351,6 +382,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filterlength([50, 99999])"
           />
           <label class="form-check-label" for="defaultCheck1">
             50+ pages
@@ -366,6 +398,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filteryear([2016, 2020])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2016 - 2020
@@ -377,6 +410,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filteryear([2011, 2015])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2011 - 2015
@@ -388,6 +422,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filteryear([2001, 2010])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2001 - 2010
@@ -399,6 +434,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filteryear([1981, 2000])"
           />
           <label class="form-check-label" for="defaultCheck1">
             1981 - 2000
@@ -410,6 +446,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
+          onclick="filteryear([0, 1980])"
           />
           <label class="form-check-label" for="defaultCheck1">
             1980 and before

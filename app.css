@@ -9,7 +9,6 @@ div nav {
   margin-top: 2%;
 }
 
-
 .container {
   margin-bottom: 3%;
 }
@@ -18,31 +17,38 @@ div nav {
   margin-top: 10%;
 }
 
-
 .topicblock {
   margin-bottom: 2%;
 }
 
 .purple {
-  background-color: rgba(204, 153, 201, 0.7);
+  background-color: rgba(173, 91, 255, 0.5);
 }
 
 .blue {
-  background-color: rgba(158, 193, 207, 0.7);
+  background-color: rgba(66, 255, 255, 0.5);
 }
 
 .green {
-  background-color: rgba(158, 224, 158, 0.7);
+  background-color: rgba(66, 255, 66, 0.5);
 }
 
 .yellow {
-  background-color: rgba(253, 253, 151, 0.7);
+  background-color: rgba(255, 255, 66, 0.5);
 }
 
 .orange {
-  background-color: rgba(254, 177, 68, 0.7);
+  background-color: rgba(255, 160, 66, 0.5);
 }
 
 .red {
-  background-color: rgba(255, 102, 99, 0.7);
+  background-color: rgba(255, 66, 66, 0.5);
+}
+
+.pink {
+  background-color: rgba(255, 91, 255, 0.5);
+}
+
+.darkblue {
+  background-color: rgba(72, 163, 254, 0.5);
 }

@@ -1,5 +1,5 @@
 window.onload = function () {
-  var requests = [d3.csv('data/data_r.csv')];
+  var requests = [d3.csv('data.csv')];
   Promise.all(requests)
     .then(function (response) {
       data = lower(response);
@@ -23,6 +23,10 @@ function search() {
       element.topic1.includes(input) ||
       element.topic2.includes(input) ||
       element.topic3.includes(input) ||
+      element.type.includes(input) ||
+      element.abstract.includes(input) ||
+      element.course_name_abbreviation.includes(input) ||
+      element.year_created.includes(input) ||
       element.keywords.includes(input)
   );
   found = preprocess(found);
@@ -50,4 +54,50 @@ function add_all_results(found) {
       .attr('class', 'result_document');
     update_files(found[i], target);
   }
+}
+
+
+// filter functions
+function filtercourse(course) {
+  let found = data[0].filter(
+    (element) =>
+      element.course_name_abbreviation.includes(course)
+  );
+  found = preprocess(found);
+  add_all_results(found);
+}
+
+function filterdoc(doc) {
+  let found = data[0].filter(
+    (element) =>
+      element.type.includes(doc)
+  );
+  found = preprocess(found);
+  add_all_results(found);
+}
+
+function filterlength(interval) {
+  console.log()
+  let found = data[0].filter(
+    (element) =>
+      (element.page_count >= interval[0] && element.page_count <= interval[1]))
+  found = preprocess(found);
+  add_all_results(found);
+}
+
+function filteryear(interval) {
+  console.log()
+  let found = data[0].filter(
+    (element) =>
+      (element.year_created >= interval[0] && element.page_count <= interval[1]))
+  found = preprocess(found);
+  add_all_results(found);
+}
+function filtercategory(category_name) {
+  let found = data[0].filter(
+    (element) =>
+      element.category.includes(category_name)
+  );
+  found = preprocess(found);
+  add_all_results(found);
 }
