@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./favicon.ico/favicon-32x32.png"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="96x96"
+  href="./favicon.ico/favicon-96x96.png"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="./favicon.ico/favicon-16x16.png"
+  />
+  <link rel="favicon.ico/manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -28,49 +51,50 @@
      <script src="/static/main.js"></script>
      <script src="/static/document_view.js"></script>
     <title>CourseOrganizer</title>
-  </head>
+</head>
+
 <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">CourseOrganizer</a>
   </nav>
-  <div id="fill_seperate_view_template"</div>
+  <div id="fill_seperate_view_template"></div>
   <script id="seperate_view_template" type="text/template">
-  <div class="row justify-content-md-center">
-    <div class="col-6  justify-content-center">
-      <h1>{{ processed_title }}</h1>
-      <h3>by {{authors}}</h3>
-      <p><b>Page count:</b> {{page_count}}    ·    <b>Year:</b> {{ year_created}}</p>
-      <table class="table">
-        <tbody>
-          <tr>
-            <th scope="row">Course</th>
-            <td>{{ courses }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Type</th>
-            <td>{{ type }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Topic1</th>
-            <td>{{ topic1 }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Topic2</th>
-            <td>{{ topic2 }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Topic3</th>
-            <td>{{ topic3 }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Keywords</th>
-            <td>{{ show_keywords }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="row justify-content-md-center">
+      <div class="col-6  justify-content-center">
+        <h1>{{ processed_title }}</h1>
+        <h3>by {{authors}}</h3>
+        <p><b>Page count:</b> {{page_count}}    ·    <b>Year:</b> {{ year_created}}</p>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">Course</th>
+              <td>{{ courses }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Type</th>
+              <td>{{ type }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Topic1</th>
+              <td>{{ topic1 }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Topic2</th>
+              <td>{{ topic2 }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Topic3</th>
+              <td>{{ topic3 }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Keywords</th>
+              <td>{{ show_keywords }}</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <iframe src="pdfs/{{filename}}" width="100%" height="500px">
+        <iframe src="pdfs/{{filename}}" width="100%" height="500px">
+      </div>
     </div>
-  </div>
-</script>
+  </script>
 </body>
