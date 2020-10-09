@@ -1,5 +1,5 @@
 window.onload = function () {
-  var requests = [d3.csv('data.csv')];
+  var requests = [d3.csv('data/data_r.csv')];
   Promise.all(requests)
     .then(function (response) {
       data = lower(response);
