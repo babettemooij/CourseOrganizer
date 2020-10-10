@@ -57,49 +57,6 @@ function add_all_results(found) {
 
 
 // filter functions
-function filtercourse(course) {
-  let found = data[0].filter(
-    (element) =>
-      element.course_name_abbreviation.includes(course)
-  );
-  found = preprocess(found);
-  add_all_results(found);
-}
-
-function filterdoc(doc) {
-  let found = data[0].filter(
-    (element) =>
-      element.type.includes(doc)
-  );
-  found = preprocess(found);
-  add_all_results(found);
-}
-
-function filterlength(interval) {
-  let found = data[0].filter(
-    (element) =>
-      (element.page_count >= interval[0] && element.page_count <= interval[1]))
-  found = preprocess(found);
-  add_all_results(found);
-}
-
-function filteryear(interval) {
-  let found = data[0].filter(
-    (element) =>
-      (element.year_created >= interval[0] && element.year_created <= interval[1]))
-  found = preprocess(found);
-  add_all_results(found);
-}
-
-function filtercategory(category_name) {
-  let found = data[0].filter(
-    (element) =>
-      element.category.includes(category_name)
-  );
-  found = preprocess(found);
-  add_all_results(found);
-}
-
 var filters = []
 
 function make_filter(filter) {
