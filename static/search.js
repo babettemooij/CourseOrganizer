@@ -3,7 +3,6 @@ window.onload = function () {
   Promise.all(requests)
     .then(function (response) {
       data = lower(response);
-      console.log(data);
       // onkeyup of search bar start searching
       $('#search_input').keyup(search);
     })
@@ -77,7 +76,6 @@ function filterdoc(doc) {
 }
 
 function filterlength(interval) {
-  console.log()
   let found = data[0].filter(
     (element) =>
       (element.page_count >= interval[0] && element.page_count <= interval[1]))
@@ -86,13 +84,13 @@ function filterlength(interval) {
 }
 
 function filteryear(interval) {
-  console.log()
   let found = data[0].filter(
     (element) =>
-      (element.year_created >= interval[0] && element.page_count <= interval[1]))
+      (element.year_created >= interval[0] && element.year_created <= interval[1]))
   found = preprocess(found);
   add_all_results(found);
 }
+
 function filtercategory(category_name) {
   let found = data[0].filter(
     (element) =>
@@ -101,3 +99,57 @@ function filtercategory(category_name) {
   found = preprocess(found);
   add_all_results(found);
 }
+
+var filters = []
+
+function make_filter(filter) {
+  filters_2 = filters.filter(function (element) { return element[1] != filter[1]; });
+  if (filters.length == filters_2.length) {
+    filters.push(filter)
+  }
+  else {
+    filters = filters_2
+  }
+  filter_update(filters)
+}
+
+function filter_update(filters) {
+  let found = data[0].filter(
+    (element) => {
+      for (filter of filters) {
+        type = filter[0]
+        input = filter[1]
+        if (type.includes("year")) {
+          if (element.year_created >= input[0] && element.year_created <= input[1]) {
+            return true
+          }
+        }
+        else if (type.includes("page_count")) {
+          if (element.page_count >= input[0] && element.page_count <= input[1]) {
+            return true
+          }
+        }
+        else if (type.includes("category")) {
+          if (element.category.includes(input)) {
+            return true
+          }
+        }
+        else if (type.includes("doc")) {
+          if (element.type.includes(input)) {
+            return true
+          }
+        }
+        else if (type.includes("course")) {
+          if (element.course_name_abbreviation.includes(input)) {
+            return true
+          }
+        }
+        else {
+          return false
+        }
+      }
+    })
+  found = preprocess(found);
+  add_all_results(found);
+}
+

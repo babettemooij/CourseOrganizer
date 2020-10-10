@@ -75,28 +75,28 @@
     <div class="row topicblock">
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action red" onclick="filtercategory('entrepreneurship')">
+          <div class="list-group-item list-group-item-action red" onclick="make_filter(['category', 'entrepreneurship'])">
             <h5 class="mb-1">Entrepreneurship</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action blue" onclick="filtercategory('statistics')">
+          <div class="list-group-item list-group-item-action blue" onclick="make_filter(['category', 'statistics'])">
             <h5 class="mb-1">Statistics</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action green" onclick="filtercategory('classification')">
+          <div class="list-group-item list-group-item-action green" onclick="make_filter(['category', 'classification'])">
             <h5 class="mb-1">Classification</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action pink" onclick="filtercategory('data research')">
+          <div class="list-group-item list-group-item-action pink" onclick="make_filter(['category', 'data research'])">
             <h5 class="mb-1">Data Research</h5>
           </div>
         </div>
@@ -105,28 +105,28 @@
     <div class="row topicblock">
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action purple" onclick="filtercategory('optimization')">
+          <div class="list-group-item list-group-item-action purple" onclick="make_filter(['category', 'optimization'])">
             <h5 class="mb-1">Optimization</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action orange" onclick="filtercategory('intelligent systems')">
+          <div class="list-group-item list-group-item-action orange" onclick="make_filter(['category', 'intelligent systems'])">
             <h5 class="mb-1">Intelligent Systems</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action yellow" onclick="filtercategory('natural language processing')">
+          <div class="list-group-item list-group-item-action yellow" onclick="make_filter(['category', 'natural language processing'])">
             <h5 class="mb-1">NLP</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action darkblue" onclick="filtercategory('system modelling')">
+          <div class="list-group-item list-group-item-action darkblue" onclick="make_filter(['category', 'system modelling'])">
             <h5 class="mb-1">System Modelling</h5>
           </div>
         </div>
@@ -170,7 +170,7 @@
           type="checkbox"
           value="bd"
           id="bd"
-          onclick="filtercourse('bd')"
+          onclick="make_filter(['course', 'bd'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Big Data
@@ -182,7 +182,7 @@
           type="checkbox"
           value="sso"
           id="sso"
-          onclick="filtercourse('sso')"
+          onclick="make_filter(['course', 'sso'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Statistics, Simulation & Organization
@@ -194,7 +194,7 @@
           type="checkbox"
           value="dm"
           id="dm"
-          onclick="filtercourse('dm')"
+          onclick="make_filter(['course', 'dm'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data Mining
@@ -206,7 +206,7 @@
           type="checkbox"
           value="fds"
           id="fds"
-          onclick="filtercourse('fds')"
+          onclick="make_filter(['course', 'fds'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Fundamentals of Data Science
@@ -218,7 +218,7 @@
           type="checkbox"
           value="aml"
           id="aml"
-          onclick="filtercourse('aml')"
+          onclick="make_filter(['course', 'aml'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Applied Machine Learning
@@ -230,7 +230,7 @@
           type="checkbox"
           value="ddbi"
           id="ddbi"
-          onclick="filtercourse('ddbi')"
+          onclick="make_filter(['course', 'ddbi'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data-driven Business Innovation and Entrepreneurship
@@ -242,7 +242,7 @@
           type="checkbox"
           value="dsp"
           id="dsp"
-          onclick="filtercourse('dsp')"
+          onclick="make_filter(['course', 'dsp'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data Systems Project
@@ -254,7 +254,7 @@
           type="checkbox"
           value="dscs"
           id="dscs"
-          onclick="filtercourse('dscs')"
+          onclick="make_filter(['course', 'dscs'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Data, Sensors, and Complex Services
@@ -266,7 +266,7 @@
           type="checkbox"
           value="eaics"
           id="eaics"
-          onclick="filtercourse('eaics')"
+          onclick="make_filter(['course', 'eaics'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Entrepreneurship for AI and CS
@@ -278,7 +278,7 @@
           type="checkbox"
           value="io"
           id="io"
-          onclick="filtercourse('io')"
+          onclick="make_filter(['course', 'io'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Information Organization
@@ -290,7 +290,7 @@
           type="checkbox"
           value="iis"
           id="iis"
-          onclick="filtercourse('iis')"
+          onclick="make_filter(['course', 'iis'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Intelligent Interactive Systems
@@ -302,7 +302,7 @@
           type="checkbox"
           value="msd"
           id="msd"
-          onclick="filtercourse('msd')"
+          onclick="make_filter(['course', 'msd'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Modeling System Dynamics
@@ -318,7 +318,7 @@
           type="checkbox"
           value="paper"
           id="defaultCheck1"
-          onclick="filterdoc('paper')"
+          onclick="make_filter(['doc', 'paper'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Paper
@@ -330,7 +330,7 @@
           type="checkbox"
           value="slides"
           id="defaultCheck1"
-          onclick="filterdoc('slides')"
+          onclick="make_filter(['doc', 'slides'])"
           />
           <label class="form-check-label" for="defaultCheck1">
             Slides
@@ -346,7 +346,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filterlength([0, 10])"
+          onclick="make_filter(['page_count', [0, 10]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             0 - 10 pages
@@ -358,7 +358,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filterlength([10, 30])"
+          onclick="make_filter(['page_count', [10, 30]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             10 - 30 pages
@@ -370,7 +370,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filterlength([30, 50])"
+          onclick="make_filter(['page_count', [30, 50]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             30 - 50 pages
@@ -382,7 +382,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filterlength([50, 99999])"
+          onclick="make_filter(['page_count', [50, 9999]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             50+ pages
@@ -398,7 +398,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filteryear([2016, 2020])"
+          onclick="make_filter(['year', [2016, 2020]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2016 - 2020
@@ -410,7 +410,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filteryear([2011, 2015])"
+          onclick="make_filter(['year', [2011, 2015]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2011 - 2015
@@ -422,7 +422,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filteryear([2001, 2010])"
+          onclick="make_filter(['year', [2001, 2010]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             2001 - 2010
@@ -434,7 +434,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filteryear([1981, 2000])"
+          onclick="make_filter(['year', [1981, 2000]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             1981 - 2000
@@ -446,7 +446,7 @@
           type="checkbox"
           value=""
           id="defaultCheck1"
-          onclick="filteryear([0, 1980])"
+          onclick="make_filter(['year', [0, 1980]])"
           />
           <label class="form-check-label" for="defaultCheck1">
             1980 and before
