@@ -21,34 +21,47 @@ div nav {
   margin-bottom: 2%;
 }
 
-.purple {
+.optimization_col {
   background-color: rgba(173, 91, 255, 0.5);
 }
 
-.blue {
+.statistics_col {
   background-color: rgba(66, 255, 255, 0.5);
 }
 
-.green {
+.classification_col {
   background-color: rgba(66, 255, 66, 0.5);
 }
 
-.yellow {
-  background-color: rgba(255, 255, 66, 0.5);
-}
-
-.orange {
-  background-color: rgba(255, 160, 66, 0.5);
-}
-
-.red {
+.entrepreneurship_col {
   background-color: rgba(255, 66, 66, 0.5);
 }
 
-.pink {
+.natural_language_processing_col {
+  background-color: rgba(255, 255, 66, 0.5);
+}
+
+.intelligent_systems_col {
+  background-color: rgba(255, 160, 66, 0.5);
+}
+
+
+.data_research_col {
   background-color: rgba(255, 91, 255, 0.5);
 }
 
-.darkblue {
+.system_modelling_col {
   background-color: rgba(72, 163, 254, 0.5);
+}
+
+.select_col{
+  background-color: #f8f9fa;
+}
+
+.display_keywords {
+  text-align: center;
+}
+
+.hidden{
+  display: none;
 }

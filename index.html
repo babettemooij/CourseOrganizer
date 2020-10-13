@@ -75,28 +75,28 @@
     <div class="row topicblock">
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action red" onclick="make_filter(['category', 'entrepreneurship'])">
+          <div class="list-group-item list-group-item-action entrepreneurship_col topicblock_item" onclick="make_filter(['category', 'entrepreneurship'])">
             <h5 class="mb-1">Entrepreneurship</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action blue" onclick="make_filter(['category', 'statistics'])">
+          <div class="list-group-item list-group-item-action statistics_col topicblock_item" onclick="make_filter(['category', 'statistics'])">
             <h5 class="mb-1">Statistics</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action green" onclick="make_filter(['category', 'classification'])">
+          <div class="list-group-item list-group-item-action classification_col topicblock_item" onclick="make_filter(['category', 'classification'])">
             <h5 class="mb-1">Classification</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action pink" onclick="make_filter(['category', 'data research'])">
+          <div class="list-group-item list-group-item-action data_research_col topicblock_item" onclick="make_filter(['category', 'data research'])">
             <h5 class="mb-1">Data Research</h5>
           </div>
         </div>
@@ -105,33 +105,44 @@
     <div class="row topicblock">
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action purple" onclick="make_filter(['category', 'optimization'])">
+          <div class="list-group-item list-group-item-action optimization_col topicblock_item" onclick="make_filter(['category', 'optimization'])">
             <h5 class="mb-1">Optimization</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action orange" onclick="make_filter(['category', 'intelligent systems'])">
+          <div class="list-group-item list-group-item-action intelligent_systems_col topicblock_item" onclick="make_filter(['category', 'intelligent systems'])">
             <h5 class="mb-1">Intelligent Systems</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action yellow" onclick="make_filter(['category', 'natural language processing'])">
+          <div class="list-group-item list-group-item-action natural_language_processing_col topicblock_item" onclick="make_filter(['category', 'natural language processing'])">
             <h5 class="mb-1">NLP</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="list-group">
-          <div class="list-group-item list-group-item-action darkblue" onclick="make_filter(['category', 'system modelling'])">
+          <div class="list-group-item list-group-item-action system_modelling_col topicblock_item" onclick="make_filter(['category', 'system modelling'])">
             <h5 class="mb-1">System Modelling</h5>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="display_keywords">
+    <p class="entrepreneurship hidden"><b>Keywords entrepreneurship: </b> product, service, customer, business, market, opportunity, uf, idea, company, change</p>
+    <p class="statistics hidden"><b>Keywords Statistics:</b> test, finish, datum, distribution, variable, model, sample, probability, error, overview</p>
+    <p class="classification hidden"><b>Keywords Classification:</b> image, learn, feature, classification, output, layer, input, object, function, step</p>
+    <p class="data_research hidden"><b>Keywords Data Research:</b> research, user, study, social, question, design, model, theory, information, qualitative </p>
+    <p class="optimization hidden"><b>Keywords Optimization:</b> problem, model, time, solution, optimization, find, decision, lecture, project, give</p>
+    <p class="intelligent_systems hidden"><b>Keywords Intelligent Systems:</b> system, intelligent_interactive, information, relationship, knowledge, base, design, network, structure, communication</p>
+    <p class="natural_language_processing hidden"><b>Keywords NLP:</b> datum, word, set, base, topic, analysis, data, class, document, dataset</p>
+    <p class="system_modelling hidden"><b>Keywords System Modelling:</b> model, method, system, factor, experiment, uf, variable, quantitative_research, time, parameter</p>
   </div>
 
   <!-- SEARCH BAR -->
@@ -470,7 +481,11 @@
               <p class="mb-1">
                 {{ show_abstract }}
               </p>
-              <small>{{ authors }}</small>
+              <div class="d-flex w-100 justify-content-between">
+                <small>{{ authors }}</small>
+                <small> {{ count }}</small>
+              </div>
+
             </div>
           </a>
         </script>

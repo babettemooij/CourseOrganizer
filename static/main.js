@@ -1,4 +1,5 @@
 function preprocess(obj) {
+  const num_items = obj.length;
   for (var prop in obj) {
     // create new property processed title with the first letter of each word in title as capital letter
     const title = obj[prop]['title'];
@@ -21,6 +22,10 @@ function preprocess(obj) {
     } else if (!keywords) {
       obj[prop]['show_keywords'] = 'None';
     }
+    // add count
+    let num = (Number(prop)+1).toString();
+
+    obj[prop]['count'] = num  + "/" + num_items
   }
   return obj;
 }
