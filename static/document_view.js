@@ -8,9 +8,9 @@ window.onload =  function(){
      // in this case it is the title
      const queryString = window.location.search;
      const urlParams = new URLSearchParams(queryString);
-     const title = urlParams.get('title');
+     const filename = urlParams.get('filename');
      // search in data for title
-     let data_document= data[0].filter(element => element.title.includes(title));
+     let data_document= data[0].filter(element => element.filename.includes(filename));
      // preprocess data for pretty printing
      data_document = preprocess(data_document);
      // add data to html page
