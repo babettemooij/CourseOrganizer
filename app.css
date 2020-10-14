@@ -62,6 +62,10 @@ div nav {
   text-align: center;
 }
 
+.num_results_found{
+  text-align: center;
+}
+
 .hidden{
   display: none;
 }

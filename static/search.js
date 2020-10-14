@@ -54,6 +54,9 @@ function add_all_results(found) {
     .attr('class', 'result_document');
     update_files(found[i], target);
   }
+  var num_results = found.length;
+  d3.select(".num_results_found").select("text").remove()
+  d3.select(".num_results_found").append("text").text("We found " + num_results.toString() + " results for your search")
 }
 
 
